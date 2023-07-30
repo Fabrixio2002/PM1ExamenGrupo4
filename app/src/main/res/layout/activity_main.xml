@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/IV_Persona"
+        android:layout_width="153dp"
+        android:layout_height="135dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+
+        android:layout_gravity="center"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="132dp"
+        android:scaleType="centerCrop"
+
+        tools:srcCompat="@drawable/perfil" />
+
+    <Button
+        android:id="@+id/btn_fotoP"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IV_Persona"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="122dp"
+        android:backgroundTint="#FF9800"
+        android:padding="4dp"
+        android:text="Subir Foto" />
+
+    <EditText
+        android:id="@+id/ET_NombreP"
+        android:layout_width="382dp"
+        android:layout_height="39dp"
+        android:layout_below="@id/descriptionLabel"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="#72E6E7ED"
+        android:inputType="textMultiLine"
+        android:minLines="3" />
+
+    <TextView
+        android:id="@+id/descriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_fotoP"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        android:text="Nombre: "
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ET_Telefono"
+        android:layout_width="382dp"
+        android:layout_height="39dp"
+        android:layout_below="@id/phoneLabel"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="#72E6E7ED"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/ET_Latitud"
+        android:layout_width="375dp"
+        android:layout_height="41dp"
+        android:layout_below="@id/phoneLabel"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="16dp"
+        android:background="#72E6E7ED"
+        android:enabled="true"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/phoneLabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ET_NombreP"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="95dp"
+        android:editable="false"
+        android:text="genero"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ET_Longitud"
+        android:layout_width="375dp"
+        android:layout_height="41dp"
+        android:layout_below="@id/LongitudLabel"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="#72E6E7ED"
+        android:enabled="true"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/LongitudLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneLabel"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="130dp"
+        android:text="Fecha de Nacimiento"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_Actualizar"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ET_Latitud"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="120dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Guardar " />
+
+    <Button
+        android:id="@+id/btn_Verlist"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ET_Latitud"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="122dp"
+        android:backgroundTint="#2196F3"
+        android:text="Ver " />
+
+    <TextView
+        android:id="@+id/phoneLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ET_NombreP"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:text="Apellido:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="1dp"
+        android:background="#009688"
+        android:text="Tarea"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold|italic" />
+
+
+</RelativeLayout>

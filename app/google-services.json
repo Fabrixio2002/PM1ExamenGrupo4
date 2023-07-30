@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "831156920763",
+    "project_id": "pm1examengrupo4",
+    "storage_bucket": "pm1examengrupo4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831156920763:android:7833cd27547ad8b64be49e",
+        "android_client_info": {
+          "package_name": "hn.uth.pm1examengrupo4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "831156920763-nne4pqmgfvsavv6hgnr5s58fc6q4740o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEk_ogdlvSdQxoWbAgjn9isTGLPtNBd_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "831156920763-nne4pqmgfvsavv6hgnr5s58fc6q4740o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
