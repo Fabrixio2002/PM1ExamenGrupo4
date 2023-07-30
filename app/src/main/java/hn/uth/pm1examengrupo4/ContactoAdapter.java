@@ -50,32 +50,7 @@ public class ContactoAdapter extends FirebaseRecyclerAdapter<Contacto, ContactoA
             }
         });
 
-        holder.btnDireccion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Obtén la latitud y longitud del contacto actual
-                String latitudStr = model.getLatitud();
-                String longitudStr = model.getLongitud();
 
-                // Convierte las cadenas de latitud y longitud a valores double
-                double latitud = Double.parseDouble(latitudStr);
-                double longitud = Double.parseDouble(longitudStr);
-
-                // Crea la URI para la ubicación en Google Maps
-                Uri gmmIntentUri = Uri.parse("google.navigation:q=" + latitud + "," + longitud + "&mode=d");
-                // Crea el intent con la acción VIEW y la URI de Google Maps
-                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-
-                // Verifica si la aplicación de Google Maps está instalada en el dispositivo
-                if (mapIntent.resolveActivity(v.getContext().getPackageManager()) != null) {
-                    // Abre la aplicación de Google Maps
-                    v.getContext().startActivity(mapIntent);
-                } else {
-                    // La aplicación de Google Maps no está instalada
-                    Toast.makeText(v.getContext(), "Google Maps no está instalado en este dispositivo", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
 
         holder.btnEliminar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -132,7 +107,6 @@ public class ContactoAdapter extends FirebaseRecyclerAdapter<Contacto, ContactoA
             nombreContacto = itemView.findViewById(R.id.nombreContacto);
             btnEliminar = itemView.findViewById(R.id.btnEliminar);
             btnActualizar = itemView.findViewById(R.id.Neto);
-            btnDireccion = itemView.findViewById(R.id.btnDireccion);
             imagenContacto = itemView.findViewById(R.id.imagenContacto);
         }
     }
